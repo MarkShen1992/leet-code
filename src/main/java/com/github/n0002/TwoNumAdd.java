@@ -66,6 +66,7 @@ public class TwoNumAdd {
         if (sumStr == null || sumStr.length() == 0) {
             return null;
         }
+        return null;
     }
 }
 
