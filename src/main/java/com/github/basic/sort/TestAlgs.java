@@ -20,7 +20,9 @@ public class TestAlgs {
             int[] arr3 = LogarithmUtils.copyArray(arr1);
 
             // 要测试的算法
-            SortAlgsUtils.bubbleSort(arr1);
+            // SortAlgsUtils.selectSort(arr1);
+            // SortAlgsUtils.bubbleSort(arr1);
+            SortAlgsUtils.insertSort(arr1);
 
             LogarithmUtils.rightMethod(arr2);
             if (!LogarithmUtils.isEqual(arr1, arr2)) {
