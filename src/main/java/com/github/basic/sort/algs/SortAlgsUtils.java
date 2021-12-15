@@ -68,4 +68,33 @@ public class SortAlgsUtils {
             }
         }
     }
+
+    /**
+     * 希尔排序
+     * 
+     * @see https://stackoverflow.com/questions/2539545/fastest-gap-sequence-for-shell-sort
+     * @param arr
+     */
+    public static void shellSort(int[] arr) {
+        if (arr == null || arr.length < 2) {
+            return;
+        }
+
+        int gap = 1;
+        while (gap <= arr.length / 3) {
+            gap = gap * 3 + 1;
+        }
+
+        for (int h = gap; h > 0; h = (h - 1) / 3) {
+            for (int i = h; i < arr.length; i++) {
+                for (int j = i; j > h - 1; j -= h) {
+                    if (arr[j - h] > arr[j]) {
+                        SwapUtils.swap(arr, j, j - h);
+                    } else {
+                        j = 1; // 为了减少循环次数，算法优化
+                    }
+                }
+            }
+        }
+    }
 }

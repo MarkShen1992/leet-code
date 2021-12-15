@@ -22,7 +22,8 @@ public class TestAlgs {
             // 要测试的算法
             // SortAlgsUtils.selectSort(arr1);
             // SortAlgsUtils.bubbleSort(arr1);
-            SortAlgsUtils.insertSort(arr1);
+            // SortAlgsUtils.insertSort(arr1);
+            SortAlgsUtils.shellSort(arr1);
 
             LogarithmUtils.rightMethod(arr2);
             if (!LogarithmUtils.isEqual(arr1, arr2)) {
