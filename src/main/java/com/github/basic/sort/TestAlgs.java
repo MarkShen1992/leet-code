@@ -23,7 +23,7 @@ public class TestAlgs {
             // SortAlgsUtils.selectSort(arr1);
             // SortAlgsUtils.bubbleSort(arr1);
             // SortAlgsUtils.insertSort(arr1);
-            SortAlgsUtils.quickSort(arr1, 0, arr1.length - 1);
+            SortAlgsUtils.quickSort2(arr1, 0, arr1.length - 1);
 
             LogarithmUtils.rightMethod(arr2);
             if (!LogarithmUtils.isEqual(arr1, arr2)) {

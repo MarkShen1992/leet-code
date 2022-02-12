@@ -146,4 +146,42 @@ public class SortAlgsUtils {
         SwapUtils.swap(arr, i + 1, high);
         return i + 1;
     }
+
+    /**
+     * 快速排序第二种方式
+     * 
+     * @param arr
+     * @param L
+     * @param R
+     */
+    public static void quickSort2(int[] arr, int L, int R) {
+        if (arr == null || arr.length < 2) {
+            return;
+        }
+
+        if (L >= R) {
+            return;
+        }
+        int left = L, right = R;
+        int pivot = arr[left];
+        while (left < right) {
+            while (left < right && arr[right] >= pivot) {
+                right--;
+            }
+            if (left < right) {
+                arr[left] = arr[right];
+            }
+            while (left < right && arr[left] <= pivot) {
+                left++;
+            }
+            if (left < right) {
+                arr[right] = arr[left];
+            }
+            if (left >= right) {
+                arr[left] = pivot;
+            }
+        }
+        quickSort2(arr, L, right - 1);
+        quickSort2(arr, right + 1, R);
+    }
 }
