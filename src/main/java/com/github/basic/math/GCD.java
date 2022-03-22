@@ -5,7 +5,7 @@ package com.github.basic.math;
  */
 public class GCD {
     public static void main(String[] args) {
-        int a = 1997, b = 615;
+        int a = 12997, b = 615;
         int max, min;
         if (a > b) {
             max = a;
@@ -25,6 +25,9 @@ public class GCD {
     }
 
     static int gcd(int max, int min) {
-        return max % min == 0 ? min : gcd(min, max % min);
+        if (min == 0) {
+            return max;
+        }
+        return gcd(min, max % min);
     }
 }
