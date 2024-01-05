@@ -2,6 +2,8 @@
 
 在正式刷算法题目之前，先学习下 [hello-algo](https://github.com/krahets/hello-algo) 算法项目，其中项目中 `com.github.helloalgo` 包下就是相对应的代码。
 
+![](./imgs/hello_algo_mindmap.png)
+
 # leetcode 题目
 
 | 序号 | 题目名称                                              | 实现代码                                                     | 难易程度 |
