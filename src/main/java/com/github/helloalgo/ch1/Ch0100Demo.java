@@ -5,6 +5,6 @@ package com.github.helloalgo.ch1;
  */
 public class Ch0100Demo {
     public static void main(String[] args) {
-
+        System.out.println("Hello Algo!");
     }
 }
